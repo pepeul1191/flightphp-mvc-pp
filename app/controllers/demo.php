@@ -23,6 +23,13 @@ class Controller_Demo extends Controller
     {
         Flight::view()->display('demo/index.tpl');
     }
+
+    public static function partial($valor)
+    {
+        Flight::view()->assign('valor', $valor);
+        Flight::view()->assign('partial', 'demo/partial2.tpl');
+        Flight::view()->display('layouts/blank.tpl');
+    }
 }
 
 ?>

@@ -15,6 +15,7 @@ Flight::route('GET /demo', array('Controller_Demo','hello'));
 Flight::route('POST /demo/params/@id', array('Controller_Demo','parametros'));
 Flight::route('GET /demo/db', array('Controller_Demo','listar_usuarios'));
 Flight::route('GET /demo/vista', array('Controller_Demo','vista'));
+Flight::route('GET /demo/partial/@valor', array('Controller_Demo','partial'));
 
 Flight::start();
 

@@ -1,4 +1,4 @@
 app/vendor/*
-bower_components/*
+public/bower_components/*
 app/templates_c/*
 app/cache/*
