@@ -1,0 +1,8 @@
+body{font-size: 12px}
+.lista-header { list-style-type: none; margin: 0; padding: 0; }
+header{width: 100%; position: relative; float: left; background: #2C4056}
+header>.row{padding-left: 20px; padding-right: 20px; }
+.titulo-app{background: #507AAA; color: #FFFFFF;}
+.lista-header>li>a{color: #FFFFFF; font-weight: 600}
+.titulo-app>h1{margin-top: 5px;margin-bottom: 5px;padding-left: 5px;font-size: 25px;}
+.btn{font-size: 12px !important; padding: 2px 5px 2px 5px; border-radius: 0px; background: #FBFBFB} 
