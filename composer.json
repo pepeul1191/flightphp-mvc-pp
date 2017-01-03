@@ -1,0 +1,11 @@
+{
+    "require": {
+        "mikecao/flight": "^1.3"
+    },
+    "autoload": {
+	    "classmap": [
+	      "app/config",
+	      "app/controllers"
+	    ]
+  	}
+}
