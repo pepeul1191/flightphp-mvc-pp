@@ -1,4 +1,4 @@
-vendor/*
+app/vendor/*
 bower_components/*
-templates_c/*
-cache/*
+app/templates_c/*
+app/cache/*
