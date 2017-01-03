@@ -20,21 +20,23 @@
     </head>
     <body ng-app="myLanguageApp">
         <header ng-include="'views/layouts/application/header.html'"></header>
+        <div class="body-app">
+            {{"Hola"}}
+            <input type="text" ng-model="name">
+            <div ng-bind="name"></div>
+            <div> hello {{name}}</div>
 
-        {{"Hola"}}
-        <input type="text" ng-model="name">
-        <div ng-bind="name"></div>
-        <div> hello {{name}}</div>
+            <div ng-controller="languges">
+                Select your Favorite Language : <br>
+                <button class="btn btn-default" ng-click="php()">PHP</button><br>
+                <button class="btn btn-default" ng-click="javascript()">JavaScript</button><br>
+                <button class="btn btn-default" ng-click="cpp()">C++</button><br>
+                <button class="btn btn-default" ng-click="java()">Java</button><br>
 
-        <div ng-controller="languges">
-            Select your Favorite Language : <br>
-            <button class="btn btn-default" ng-click="php()">PHP</button><br>
-            <button class="btn btn-default" ng-click="javascript()">JavaScript</button><br>
-            <button class="btn btn-default" ng-click="cpp()">C++</button><br>
-            <button class="btn btn-default" ng-click="java()">Java</button><br>
-
-            <p>You have selected : {{myFavLanguage}}</p>
+                <p>You have selected : {{myFavLanguage}}</p>
+            </div>
         </div>
+        <footer ng-include="'views/layouts/application/footer.html'"></footer>
 
         <script type="text/javascript">var BASE_URL = "http://localhost/accesos/";</script>
         <script type="text/javascript">

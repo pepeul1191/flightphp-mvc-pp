@@ -1,8 +1,15 @@
-body{font-size: 12px}
+body{font-size: 12px; background: #F1EFE2; margin: 5px}
+.row {margin-right: 0px; margin-left: 0px;}
 .lista-header { list-style-type: none; margin: 0; padding: 0; }
-header{width: 100%; position: relative; float: left; background: #2C4056}
-header>.row{padding-left: 20px; padding-right: 20px; }
-.titulo-app{background: #507AAA; color: #FFFFFF;}
+header{width: 100%; position: relative; float: left; background: #507AAA; margin-bottom: 15px;}
+header>.row{padding-left: 2.5px; padding-right: 2.5px; }
+.panel-app{background: #2C4056;     margin-right: 0px;};
+.titulo-app{color: #FFFFFF; margin-bottom: 5px;}
 .lista-header>li>a{color: #FFFFFF; font-weight: 600}
-.titulo-app>h1{margin-top: 5px;margin-bottom: 5px;padding-left: 5px;font-size: 25px;}
-.btn{font-size: 12px !important; padding: 2px 5px 2px 5px; border-radius: 0px; background: #FBFBFB} 
+.titulo-app>h1{margin-top: 10px;margin-bottom: 10px;padding-left: 5px;font-size: 25px; color: #FFFFFF;}
+.btn{font-size: 12px !important; padding: 2px 5px 2px 5px; border-radius: 0px; background: #FBFBFB}
+.modulos-app{color: #FFFFFF; margin-left: 5px;}
+.lista-modulos>li>a{color: #FFFFFF; font-weight: 600; font-size: 13px;}
+.lista-modulos{margin-bottom: 2.5px;}
+.body-app{padding-left:10px; padding-right: 10px; margin-bottom: 10px;padding-bottom: 10px;background: #FFF; border-bottom: 1px solid #ddd;}
+footer{color: #888; padding-left: 10px; padding-right: 10px;}
