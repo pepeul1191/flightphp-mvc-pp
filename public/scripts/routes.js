@@ -1,8 +1,6 @@
 'use strict';
 
-var app = angular.module('myLanguageApp', ['ngRotue']);
-
-app.config("$routeProvider", function($routeProvider){
+var app = angular.module('myLanguageApp', ['ngRotue']).config("$routeProvider", function($routeProvider){
     $routeProvider.
     when('/notas', { 
         templateUrlxd: 'views/nota/index.html' ,controller: 'IndexNoteCtrl'
