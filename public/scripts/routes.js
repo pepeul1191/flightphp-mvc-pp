@@ -1,15 +1,12 @@
-'use strict';
+var app = angular.module("myLanguageApp", ['ngRoute']);
 
-var app = angular.module('myLanguageApp', ['ngRotue']).config("$routeProvider", function($routeProvider){
+app.config(function($routeProvider){
     $routeProvider.
     when('/notas', { 
-        templateUrlxd: 'views/nota/index.html' ,controller: 'IndexNoteCtrl'
+        templateUrl: 'public/views/nota/index.html' ,
+        controller: 'IndexNoteCtrl'
     }).
     when('/usuarios', { 
-        templateUrlxd: 'views/usuario/index.html' //,controller: 'IndexNoteCtrl'
+        templateUrl: 'public/views/usuario/index.html' //,controller: 'IndexNoteCtrl'
     })
-    .otherwise({
-        redirectTo:"/notas"
-    });
 });
-
