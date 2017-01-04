@@ -1,22 +1,24 @@
 {
-    "name": "AngularPP",
-    "version": "1.0.0",
-    "main": "path/to/main.css",
-    "ignore": [
-        ".jshintrc", "**/*.txt"
-    ],
-    "dependencies": {
-    },
-    "devDependencies": {
-        "bootstrap": "^3.3.7",
-        "jquery": "^2.2.4",
-         "requirejs": "^2.3.2",
-         "underscore": "^1.8.3",
-         "angular": "1.4.7",
-        "angular-route": "1.4.7",
-        "angular-resource": "1.4.7",
-        "font-awesome": "^4.6.3",
-        "mootools-more":"^1.5.1",
-        "mootools-core":"^1.2.6"
-    }
+  "name": "AngularPP",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "oclazyload": "^1.0.9"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^2.2.4",
+    "requirejs": "^2.3.2",
+    "underscore": "^1.8.3",
+    "angular": "1.4.7",
+    "angular-route": "1.4.7",
+    "angular-resource": "1.4.7",
+    "font-awesome": "^4.6.3",
+    "mootools-more": "^1.5.1",
+    "mootools-core": "^1.2.6"
+  }
 }

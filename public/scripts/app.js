@@ -1,4 +1,5 @@
-var app = angular.module("myLanguageApp", ['ngRoute']);
+var app = angular.module("myLanguageApp", ['ngRoute', 'oc.lazyLoad']);
+var BASE_URL = "http://localhost/accesos/";
 
 app.config(function($routeProvider){
     $routeProvider.
@@ -8,11 +9,27 @@ app.config(function($routeProvider){
 	    }).
 	    when('/usuarios', { 
 	        templateUrl: 'public/views/usuario/index.html' //,controller: 'IndexNoteCtrl'
+	    }).
+	    when('/seguridad', { 
+	        templateUrl: 'public/views/seguridad/index.html',
+	        controller: 'SeguridadController',
+	        resolve: {
+                lazy: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load([{
+                        name: 'myLanguageApp',
+                        files: [
+                        	BASE_URL + 'public/assets/seguridad/index/js/index.js',
+                        	'public/views/seguridad/table.html'],
+                        cache: false
+                    }]);
+                }]
+            }
 	    })
 });
 
 angular.module('myLanguageApp').controller('ApplicationController', function($scope, $http, $log){
 	$scope.title = "Aplicación FlightPHP + Angular",
+	$scope.base_url = "http://localhost/accesos/",
 	$http({
 		method : "GET",
     	url : "http://localhost:5001/modulo/listar"
@@ -32,4 +49,8 @@ angular.module('myLanguageApp').controller('ApplicationController', function($sc
 			}
 		);
 	}
+});
+
+angular.module('myLanguageApp').controller('SeguridadController', function($scope, $http, $log, $ocLazyLoad, $injector){
+
 });
