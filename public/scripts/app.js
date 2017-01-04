@@ -1,3 +1,5 @@
+'use strict';
+
 var app = angular.module("myLanguageApp", ['ngRoute', 'oc.lazyLoad']);
 var BASE_URL = "http://localhost/accesos/";
 
@@ -19,8 +21,10 @@ app.config(function($routeProvider){
                         name: 'myLanguageApp',
                         files: [
                         	BASE_URL + 'public/assets/seguridad/index/js/index.js',
-                        	'public/views/seguridad/table.html'],
-                        cache: false
+                        	BASE_URL + 'public/scripts/controllers/seguridad.js'
+                        ],
+                        cache: true,
+                        rerun: true,
                     }]);
                 }]
             }

@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+angular.module('myLanguageApp').controller('SeguridadController', function(){
   	$.ajax({
 		type: "GET",
 		url: "http://localhost:5001/usuario/listar",
@@ -14,8 +14,8 @@ $( document ).ready(function() {
 			$("#tablita").children("tbody").append(rpta);
 		}
 	});
-});
 
-$(document).on("click", "#botonsito", function() {
-	alert("????");
+  	$(document).on("click", "#botonsito", function() {
+		console.log("AAAAAAAAA");
+	});
 });
