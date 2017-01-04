@@ -13,4 +13,8 @@ header>.row{padding-left: 2.5px; padding-right: 2.5px; }
 .lista-modulos>li>a{color: #FFFFFF; font-weight: 600; font-size: 13px;}
 .lista-modulos{margin-bottom: 2.5px;}
 .body-app{padding-left:10px; padding-right: 10px; margin-bottom: 10px;padding-bottom: 10px;background: #FFF; border-bottom: 3px solid #ddd; position: relative; float: left;width: 100%; padding-top: 10px;}
+.modulos > h3{ font-size: 13px; margin-top: 14px;color: #666;font-weight: 600;}
+.items > li > a{ font-size: 12px;}
+.items {list-style: none; padding-left: 0px; line-height: 1.25;}
+#menu-side{border-left: 2px solid #ddd;}
 footer{color: #888; padding-left: 10px; padding-right: 10px;}

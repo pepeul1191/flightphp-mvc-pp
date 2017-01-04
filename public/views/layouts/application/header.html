@@ -16,4 +16,7 @@
 	    <li><a href="#/usuarios">Usuarios</a></li>
 	    <li><a href="#/notas">Notas</a></li>
 	</ul> 
+	<ul class="lista-modulos list-inline pull-left" ng-repeat="menu_modulo in menu_modulos">
+	   <li><a href="#/{{menu_modulo.url}}" ng-click='load_submenu($event)'>{{menu_modulo.nombre}}</a></li>
+	</ul> 
 </div>
