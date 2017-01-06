@@ -1,0 +1,7 @@
+.login-container{background: #FFFFFF; padding: 15px; border: 2px solid #DDD; margin-top: 25%;}
+.login-input{border-radius: 0px; font-size: 12px; height: 30px; padding: 2px 6px;}
+.btn-login-input{margin-top: 5px; background: #337ab7; height: 25px;}
+.loginbox > h3 {text-align: center;     margin-bottom: 25px;}
+.loginbox-forgot{margin-top: 10px}
+.logobox{margin-top: 10px}
+.color-rojo{font-weight: 300;}

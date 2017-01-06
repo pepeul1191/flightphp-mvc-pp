@@ -24,7 +24,7 @@ app.config(function($routeProvider){
                         	BASE_URL + 'public/scripts/controllers/seguridad.js'
                         ],
                         cache: true,
-                        rerun: true,
+                        
                     }]);
                 }]
             }

@@ -1,21 +1,21 @@
 <html>
 <head>
-<title>Título TPL</title>
+    <title>{if isset($title)}{$title}{else}Aplicaction{/if}</title>
+    <link rel="shortcut icon" href="{Configuration::get('base_url')}public/assets/site/img/favicon.ico" type="image/x-icon">
     <!-- Inicio CSS -->
-    <link href="{Configuration::get('base_url')}public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="{Configuration::get('base_url')}public/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="{Configuration::get('base_url')}public/assets/site/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="{Configuration::get('public_url')}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{Configuration::get('public_url')}bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{Configuration::get('public_url')}assets/site/css/styles.css" rel="stylesheet" type="text/css"/>
+    {if isset($csss)}{foreach from = $csss item = css}<link href="{Configuration::get('public_url')}{$css}.css" rel="stylesheet" type="text/css"/>{/foreach}{/if}
     <!-- Fin CSS -->
 </head>
 <body>
-    <h1>Index</h1>
-    <b>BASE_URL : </b>{Configuration::get('base_url')}
     {include file=$partial}
     <!-- Inicio JS-->
-    <script src="{Configuration::get('base_url')}public/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="{Configuration::get('base_url')}public/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="{Configuration::get('base_url')}public/bower_components/requirejs/require.js" type="text/javascript"></script>
-    <script src="{Configuration::get('base_url')}public/assets/site/js/app.js" type="text/javascript"></script>
+    <script src="{Configuration::get('public_url')}bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="{Configuration::get('public_url')}bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="{Configuration::get('public_url')}bower_components/requirejs/require.js" type="text/javascript"></script>
+    {if isset($jss)}{foreach from = $jss item = js}<script src="{Configuration::get('public_url')}{$js}.js" type="text/javascript"></script>{/foreach}{/if}
     <!-- Fin JS-->
 </body>
 </html>

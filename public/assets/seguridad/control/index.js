@@ -1,4 +1,4 @@
-angular.module('myLanguageApp').controller('SeguridadController', function(){
+angular.module('myLanguageApp').controller('ControlController', function(){
   	$.ajax({
 		type: "GET",
 		url: "http://localhost:5001/usuario/listar",
@@ -15,7 +15,7 @@ angular.module('myLanguageApp').controller('SeguridadController', function(){
 		}
 	});
 
-  	$( "#botonsito" ).click(function() {
+  	$(document).on("click", "#botonsito", function() {
 		console.log("AAAAAAAAA");
 	});
 });

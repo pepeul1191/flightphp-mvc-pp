@@ -14,7 +14,7 @@
         <script src="{Configuration::get('base_url')}public/bower_components/angular/angular.min.js" type="text/javascript"></script>
         <!--<script src="{Configuration::get('base_url')}public/bower_components/angular-resource/angular-resource.min.js" type="text/javascript"></script>-->
         <script src="{Configuration::get('base_url')}public/bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
-        <script src="{Configuration::get('base_url')}public/bower_components/oclazyload/dist/ocLazyLoad.min.js" type="text/javascript"></script>
+        <script src="{Configuration::get('base_url')}public/bower_components/oclazyload/dist/ocLazyLoad.require.min.js" type="text/javascript"></script>
         <script type="text/javascript">var BASE_URL = "http://localhost/accesos/";</script>
         <script src="{Configuration::get('base_url')}public/scripts/app.js" type="text/javascript"></script>
         <script src="{Configuration::get('base_url')}public/scripts/controllers/note.js" type="text/javascript"></script>
@@ -42,6 +42,7 @@
         <script src="{Configuration::get('base_url')}public/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
         <script src="{Configuration::get('base_url')}public/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="{Configuration::get('base_url')}public/bower_components/underscore/underscore-min.js" type="text/javascript"></script>
+        <script src="{Configuration::get('base_url')}public/bower_components/requirejs/require.js" type="text/javascript"></script>
         <!-- Fin Javascript -->
     </body>
 </html>

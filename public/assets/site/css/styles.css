@@ -18,3 +18,7 @@ header>.row{padding-left: 2.5px; padding-right: 2.5px; }
 .items {list-style: none; padding-left: 0px; line-height: 1.25;}
 #menu-side{border-left: 2px solid #ddd;}
 footer{color: #888; padding-left: 10px; padding-right: 10px;}
+.color-rojo{color:#a94442;}
+.color-warning{color: #8a6d3b;}
+.color-success{color: #3c763d;}
+.oculto{display: none}
