@@ -8,7 +8,7 @@
         <!-- Inicio CSS -->
         <link href="{Configuration::get('base_url')}public/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="{Configuration::get('base_url')}public/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="{Configuration::get('base_url')}public/assets/site/css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="{Configuration::get('base_url')}public/bower_components/bootstrap-redmine/assets/css/styles.css" rel="stylesheet" type="text/css"/>
         <!-- Fin CSS -->
         <!-- Inicio Angular -->
         <script src="{Configuration::get('base_url')}public/bower_components/angular/angular.min.js" type="text/javascript"></script>
