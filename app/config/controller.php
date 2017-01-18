@@ -40,7 +40,7 @@ abstract class Controller
         }
     }
 
-    protected static function get_library($libreria, $param)
+    protected static function get_library($libreria)
     {
         $ruta_libreria = Configuration::get('path') . 'libs' . DIRECTORY_SEPARATOR . $libreria . '.php';
 
