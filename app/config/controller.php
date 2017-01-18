@@ -46,6 +46,9 @@ abstract class Controller
 
         if(is_readable($ruta_libreria)){
             require_once $ruta_libreria;
+            $libreriaInstacia = new $libreria();
+            //$controlador = new $controlador;
+            return $libreriaInstacia;
         }
         else{
             throw new Exception('Error de libreria');

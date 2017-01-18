@@ -7,7 +7,9 @@
     "**/*.txt"
   ],
   "dependencies": {
-    "oclazyload": "^1.0.9"
+    "oclazyload": "^1.0.9",
+    "bootstrap-redmine": "*",
+    "swp-plugins": "*"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",

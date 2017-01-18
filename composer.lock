@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9c88f6dddb9504abec4668da342e782d",
     "content-hash": "1bcffa300b87eb51273b4df2a7c04158",
     "packages": [
         {
@@ -48,7 +47,7 @@
             ],
             "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.",
             "homepage": "http://flightphp.com",
-            "time": "2016-10-25 19:27:20"
+            "time": "2016-10-25T19:27:20+00:00"
         },
         {
             "name": "smarty/smarty",
@@ -101,7 +100,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-12-14 21:57:25"
+            "time": "2016-12-14T21:57:25+00:00"
         }
     ],
     "packages-dev": [],

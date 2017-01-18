@@ -4,6 +4,8 @@ require 'app/vendor/autoload.php';
 
 Configuration::init( realpath(dirname(__FILE__)) . '/app/', 'http://localhost/accesos/', 'http://localhost/accesos/public/', 'sqlite:' . realpath(dirname(__FILE__) . '/db/' . 'db_accesos.db'), 10);
 
+define('HASH_KEY','50631f4f8ba97');
+
 function smarty_prefilter_angularjsescape($source, Smarty_Internal_Template $smarty)
 {
    $source = str_replace('{{', '%AJSL%', $source);
