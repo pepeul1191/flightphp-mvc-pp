@@ -40,7 +40,7 @@ abstract class Controller
         }
     }
 
-    protected static function get_library($libreria)
+    protected static function get_library($libreria, $param)
     {
         $ruta_libreria = Configuration::get('path') . 'libs' . DIRECTORY_SEPARATOR . $libreria . '.php';
 
@@ -53,6 +53,24 @@ abstract class Controller
         else{
             throw new Exception('Error de libreria');
         }
+    }
+
+    protected static function get($url)
+    {
+       return file_get_contents($url);;
+    }
+
+    protected static function post($url)
+    {
+       $curl = curl_init($url);
+       $curl_post_data = array();
+       curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+       curl_setopt($curl, CURLOPT_POST, true);
+       curl_setopt($curl, CURLOPT_POSTFIELDS, $curl_post_data);
+       $rpta = curl_exec($curl);
+       curl_close($curl);
+
+       return $rpta;
     }
 }
 

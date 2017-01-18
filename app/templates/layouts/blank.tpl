@@ -6,7 +6,9 @@
     <link href="{Configuration::get('public_url')}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="{Configuration::get('public_url')}bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="{Configuration::get('public_url')}assets/site/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="{Configuration::get('base_url')}public/bower_components/bootstrap-redmine/assets/css/styles.css" rel="stylesheet" type="text/css"/>
     {if isset($csss)}{foreach from = $csss item = css}<link href="{Configuration::get('public_url')}{$css}.css" rel="stylesheet" type="text/css"/>{/foreach}{/if}
+    <script type="text/javascript">var BASE_URL = "{Configuration::get('base_url')}";</script>
     <!-- Fin CSS -->
 </head>
 <body>

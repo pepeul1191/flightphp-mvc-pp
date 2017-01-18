@@ -41,6 +41,9 @@ Flight::route('POST /login/acceder', array('Controller_Login','acceder'));
 Flight::route('GET /login/ver', array('Controller_Login','ver'));
 Flight::route('GET /salir', array('Controller_Login','salir'));
 
+Flight::route('GET /modulo/listar', array('Controller_Modulo','listar'));
+Flight::route('GET /item/listar/menu/@modulo', array('Controller_Item','listar'));
+
 Flight::start();
 
 ?>

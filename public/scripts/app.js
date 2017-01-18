@@ -1,7 +1,6 @@
 'use strict';
 
 var app = angular.module("myLanguageApp", ['ngRoute', 'oc.lazyLoad']);
-var BASE_URL = "http://localhost/accesos/";
 
 app.config(function($routeProvider){
     $routeProvider.
@@ -36,7 +35,7 @@ angular.module('myLanguageApp').controller('ApplicationController', function($sc
 	$scope.base_url = "http://localhost/accesos/",
 	$http({
 		method : "GET",
-    	url : "http://localhost:5001/modulo/listar"
+    	url : BASE_URL + "modulo/listar"
     })
     .then(function(response){
     	$scope.menu_modulos = response.data;
@@ -45,7 +44,7 @@ angular.module('myLanguageApp').controller('ApplicationController', function($sc
 		var nombre_modulo = $event.currentTarget.childNodes[0]['data'];
 		$http({
 				method : "GET",
-				url : "http://localhost:5001/item/listar/menu/" + nombre_modulo
+				url : BASE_URL + "item/listar/menu/" + nombre_modulo
 			})
 			.then(function(response){
 				$scope.title = nombre_modulo;

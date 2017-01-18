@@ -9,6 +9,7 @@ class Configuration
 		self::$data["path"] = $path;
 		self::$data["base_url"] = $base_url;
 		self::$data["public_url"] = $public_url;
+		self::$data["accesos"] = 'http://127.0.0.1:5001/';
 		if($db){
 			self::$data["db"] = $db;
 		}
